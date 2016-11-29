@@ -49,3 +49,24 @@ To execute them, run the following command:
 ```
 $ pytest -v
 ```
+
+## Package & distribute your application as a container image
+
+The project provides a recipe to build a Docker
+image of the application and its dependencies to
+simply its distribution. You can build the image
+as follows:
+
+```
+$ docker build -t Flask-Atomist-Test .
+```
+
+To run the application inside a container, execute then
+the following commands:
+
+```
+$ docker run -d -p 5000:5000 Flask-Atomist-Test
+```
+
+This will use [CherryPy](http://cherrypy.org/) well-established
+and production ready WSGI server.
