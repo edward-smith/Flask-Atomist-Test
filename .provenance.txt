@@ -15,3 +15,18 @@ app_name: flasktest
 version: 0.1.0
 description: Testing out Atomist
 
+####
+
+# editor info
+name: atomist-project-templates.flask-service.AddDockerfile
+group: atomist-project-templates
+artifact: flask-service
+version: 1.1.1
+
+# backing git repo
+repo: atomist-project-templates/flask-service.git
+branch: master
+sha: 8100c46
+
+# parameter values
+
